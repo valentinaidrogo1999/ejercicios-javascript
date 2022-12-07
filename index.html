@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Muestra 1 para ejarcicios dhtml</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <script src="index.js"></script>
+    <section class="botones">
+        <div onclick="toggle()" class="boton">Abrir - cerrar</div>
+        <div onclick="cambiar()" class="boton">Cambiar título</div>
+        <div onclick="crearDiv()" class="boton">Crear bloque</div>
+        <div onclick="borrarDiv()" class="boton">Borrar bloque</div>
+        <div onclick="fuentesImg()" class="boton">Fuentes</div>
+        <div onclick="intercalar()" class="boton">Subtitulo</div>
+    </section>        
+<header><h1 id="titular" onclick="togleClase()">Hola Mundo</h1></header>
+<div id="subtitulo" style="text-align:center">Página de muestra de javascript dhtml</div>
+<div class="paneles">
+<figure onclick="ponerPie(this)"><img src="img/uno1.png" width="33" height="75" alt="Número 1"/>
+  <figcaption></figcaption></figure>
+<figure onclick="ponerPie(this)"><img src="img/dos.png" width="50" height="75" alt="Número 2"/>
+  <figcaption></figcaption></figure>
+<figure onclick="ponerPie(this)"><img src="img/tres.png" width="49" height="75" alt="Número 3"/>
+  <figcaption></figcaption></figure>    
+</div>    
+<div id="fuentes" ></div>
+<div  class="carrusel" data-img="0" onclick="cambiaImg()">
+    <img src="img/uno.png" alt="Diapositivas" id="diapo">
+</div>    
+
+    <script src="ejercicios.js"></script>
+    <script src="modelo.js"></script>
 </body>
 </html>
